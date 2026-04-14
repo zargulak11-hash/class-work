@@ -1,0 +1,132 @@
+$maincolor: #217BF4;
+
+body {
+    font-family: sans-serif;
+}
+
+@mixin container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@mixin buttons {
+    background-color: $maincolor;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+@mixin aside {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    @include container();
+
+    div {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    input {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+}
+
+.cont {
+    background: linear-gradient( to right, white, #D4E7FE);
+}
+
+.section1 {
+    @include container();
+    padding-bottom: 70px;
+
+    aside {
+        @include aside();
+        h1 {
+            font-size: 50px;
+        }
+        p{
+            color: #656464;
+            font-size: 16px;
+            width: 406px;
+        }
+        button {
+            @include buttons();
+            background-color: #E8F1FE;
+            color: $maincolor;
+        }
+
+        div {
+            button:first-child {
+                @include buttons;
+            }
+
+            button:last-child {
+                @include buttons;
+                background-color: white;
+                border: 1px solid $maincolor;
+                color: $maincolor;
+            }
+        }
+    }
+}
+.section2{
+    @include container();
+    margin-top: 50px;
+    .aside1{
+        @include aside();
+        h1{
+            font-size: 36px;
+        }
+        h4{
+            font-size: 18px;
+            color:$maincolor;
+        }
+        p{
+            color: #656464;
+            font-size: 16px;
+            width: 380px;
+        }
+        div{
+            display: flex;
+            gap: 10px;
+        }
+        p:last-child{
+            color: #171648;
+        }
+    }
+    .aside2{
+        @include container();
+        gap: 30px;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}

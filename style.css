@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+header div {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header div nav {
+  display: flex;
+  gap: 20px;
+}
+header input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.cont {
+  background: linear-gradient(to right, white, #D4E7FE);
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+.section1 aside {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+.section1 aside h1 {
+  font-size: 50px;
+}
+.section1 aside p {
+  color: #656464;
+  font-size: 16px;
+  width: 406px;
+}
+.section1 aside button {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: #E8F1FE;
+  color: #217BF4;
+}
+.section1 aside div button:first-child {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.section1 aside div button:last-child {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid #217BF4;
+  color: #217BF4;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+}
+.section2 .aside1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+.section2 .aside1 h1 {
+  font-size: 36px;
+}
+.section2 .aside1 h4 {
+  font-size: 18px;
+  color: #217BF4;
+}
+.section2 .aside1 p {
+  color: #656464;
+  font-size: 16px;
+  width: 380px;
+}
+.section2 .aside1 div {
+  display: flex;
+  gap: 10px;
+}
+.section2 .aside1 p:last-child {
+  color: #171648;
+}
+.section2 .aside2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: 30px;
+}
+.section2 .aside2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */
