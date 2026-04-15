@@ -424,3 +424,58 @@ header {
             height: 500px;
         }
 }
+.header5 {
+    @include container();
+    margin-top: 80px;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 15px;
+
+    h4 {
+        font-size: 18px;
+        color: $maincolor;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    .cards{
+        margin-top: 50px;
+        display: flex;
+        gap: 70px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 340px;
+            height: 459px;
+            img{
+                border-radius: 30px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                p{
+                    font-size: 20px;
+                    font-weight: 600;
+                    width: 273px;
+                    color: #2F2C4A;
+                }
+            }
+            h5{
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                color: #656464;
+            }
+            h6{
+              text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                color: $maincolor;  
+            }
+        }
+    }
+}

@@ -417,4 +417,63 @@ header input {
 .header4 .img {
   width: 700px;
   height: 500px;
+}
+
+.header5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 80px;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.header5 h4 {
+  font-size: 18px;
+  color: #217BF4;
+}
+.header5 h1 {
+  font-size: 36px;
+}
+.header5 .cards {
+  margin-top: 50px;
+  display: flex;
+  gap: 70px;
+}
+.header5 .cards .card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 340px;
+  height: 459px;
+}
+.header5 .cards .card img {
+  border-radius: 30px;
+}
+.header5 .cards .card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header5 .cards .card div p {
+  font-size: 20px;
+  font-weight: 600;
+  width: 273px;
+  color: #2F2C4A;
+}
+.header5 .cards .card h5 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656464;
+}
+.header5 .cards .card h6 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #217BF4;
 }/*# sourceMappingURL=style.css.map */
