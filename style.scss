@@ -495,7 +495,7 @@ header {
 
 .footer {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     margin-top: 90px;
     background-color: #2B2B39;
 }
@@ -572,4 +572,21 @@ header {
             
     }
 
+}
+.header7{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #20202D;
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #F6F6F6;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }

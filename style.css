@@ -480,7 +480,7 @@ header input {
 
 .footer {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   margin-top: 90px;
   background-color: #2B2B39;
 }
@@ -562,4 +562,22 @@ header input {
   font-weight: 400;
   color: #717179;
   background-color: rgba(10, 9, 61, 0);
+}
+
+.header7 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #20202D;
+}
+.header7 p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #F6F6F6;
+}
+.header7 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
