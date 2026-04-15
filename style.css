@@ -373,4 +373,48 @@ header input {
   font-size: 16px;
   font-weight: 400;
   color: #656464;
+}
+
+.section4 {
+  margin-top: 70px;
+  background-color: #E5F0FD;
+  height: 520px;
+}
+
+.header4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.header4 h4 {
+  font-size: 18px;
+  color: #217BF4;
+}
+.header4 h1 {
+  width: 350px;
+  font-size: 36px;
+}
+.header4 p {
+  color: #656464;
+  font-size: 16px;
+  width: 300px;
+}
+.header4 .divleft {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: start;
+}
+.header4 .divleft div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: -20px;
+}
+.header4 .img {
+  width: 700px;
+  height: 500px;
 }/*# sourceMappingURL=style.css.map */
