@@ -25,7 +25,7 @@ body {
 @mixin aside {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 22px;
     align-items: start;
 }
 
@@ -58,7 +58,7 @@ header {
 }
 
 .cont {
-    background: linear-gradient( to right, white, #D4E7FE);
+    background: linear-gradient(to right, white, #D4E7FE);
 }
 
 .section1 {
@@ -67,14 +67,17 @@ header {
 
     aside {
         @include aside();
+
         h1 {
             font-size: 50px;
         }
-        p{
+
+        p {
             color: #656464;
             font-size: 16px;
             width: 406px;
         }
+
         button {
             @include buttons();
             background-color: #E8F1FE;
@@ -95,38 +98,292 @@ header {
         }
     }
 }
-.section2{
+
+.section2 {
     @include container();
     margin-top: 50px;
-    .aside1{
+
+    .aside1 {
         @include aside();
-        h1{
+
+        h1 {
             font-size: 36px;
         }
-        h4{
+
+        h4 {
             font-size: 18px;
-            color:$maincolor;
+            color: $maincolor;
         }
-        p{
+
+        p {
             color: #656464;
             font-size: 16px;
             width: 380px;
         }
-        div{
+
+        div {
             display: flex;
             gap: 10px;
         }
-        p:last-child{
+
+        p:last-child {
             color: #171648;
         }
     }
-    .aside2{
+
+    .aside2 {
         @include container();
         gap: 30px;
-        div{
+
+        div {
             display: flex;
             flex-direction: column;
             gap: 30px;
         }
+    }
+}
+
+.header1 {
+    @include container();
+    margin-top: 70px;
+    align-items: start;
+
+    .aside1 {
+        display: flex;
+        gap: 30px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 30px;
+        width: 260px;
+        height: 274px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #b4b3b35e;
+        border-radius: 14px;
+
+        div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 500;
+                color: #0A093D;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 16px;
+                color: $maincolor;
+            }
+        }
+
+        p {
+            color: #8C8C8C;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: $maincolor;
+        }
+    }
+
+    .box1 {
+        @extend .box;
+        box-shadow: none;
+        border: 1px solid #b4b3b35e;
+
+        h2 {
+            color: #4A4A56;
+            font-weight: 500;
+        }
+    }
+
+    .aside2 {
+        @include aside();
+
+        h1 {
+            width: 360px;
+            font-size: 36px;
+        }
+
+        h4 {
+
+            font-size: 18px;
+            color: $maincolor;
+        }
+
+        p {
+            color: #656464;
+            font-size: 16px;
+            width: 365px;
+        }
+
+        button {
+            @include buttons();
+            box-shadow: 0px 0px 20px #217BF442;
+        }
+    }
+}
+
+.section3 {
+    margin-top: 80px;
+    background: linear-gradient(#F1F6FD00, #F1F6FD, #F1F6FD, #FFFFFF);
+}
+
+.header2 {
+    @include container();
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 15px;
+
+    h4 {
+        font-size: 18px;
+        color: $maincolor;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        color: #656464;
+        font-size: 16px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .boxs {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+
+        .bix1 {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            width: 480px;
+            height: 140px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 19px #7F7F7F21;
+            background-color: white;
+
+            p:last-child {
+                margin-top: 10px;
+                width: 280px;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: start;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                color: #2F2C4A;
+            }
+        }
+    }
+}
+
+.header3 {
+    @include container();
+    @extend .header2;
+    margin-top: 70px;
+
+    .width {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 474px;
+        height: 72px;
+        background-color: #F0F4F8;
+        border-radius: 14px;
+    }
+
+    button {
+        @include buttons();
+        width: 150px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #2F2C4A;
+    }
+
+    .kartas {
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+
+        .karta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 270px;
+            height: 300px;
+            border-radius: 14px;
+            box-shadow: 0px 0px 19px #7473801A;
+            background-color: white;
+
+            img {
+                margin-top: 30px;
+            }
+
+            h2 {
+                margin-top: 20px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #2F2C4A;
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 400;
+                color: #656464;
+            }
+        }
+    }
+}
+
+.karta1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 270px;
+    height: 300px;
+    border-radius: 14px;
+    border: 2px solid #F3F3F380;
+    background-color: white;
+
+    img {
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #2F2C4A;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #656464;
     }
 }
